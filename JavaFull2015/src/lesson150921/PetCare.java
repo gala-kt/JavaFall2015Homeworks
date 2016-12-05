@@ -8,25 +8,25 @@ public class PetCare {
 		Cat cat = new Cat();
 		Parrot parrot = new Parrot();
 		Turtle turtle = new Turtle();
+		Raven raven = new Raven();
 
-		care(cat);
-		care(turtle);
-		care(dog);
+//		cat.care();
+//		turtle.care();
+//		dog.care();
+//		parrot.care();
+//		System.out.println("\n");
+//		raven.care();
+
+		care(cat, dog, raven, parrot, turtle);
 
 	}
 
-	private static void care(Pet pet) {
-
-		pet.play();
-		pet.feed();
-		pet.walk();
-
-
-		if (pet instanceof MammalPetWithFur) {
-			((MammalPetWithFur) pet).comb();
+	public static void care(Pet... pets) {
+		for (Pet pet : pets) {
+			pet.care();
 		}
-	}
 
+	}
 
 
 }

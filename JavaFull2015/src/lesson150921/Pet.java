@@ -16,4 +16,28 @@ public class Pet {
 
 	}
 
+	void care() {
+
+		play();
+		feed();
+		walk();
+
+		special();
+
+
+//		if (this instanceof MammalPetWithFur) {
+//			((MammalPetWithFur) this).comb();
+//		}
+//
+//		if (this instanceof Chirikable) {
+//			Chirikable chirikPet = (Chirikable) this;
+//			chirikPet.chirik();
+//		}
+	}
+
+	public void special() {
+
+	}
+
+
 }

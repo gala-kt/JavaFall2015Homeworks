@@ -6,10 +6,25 @@ public class UseAB {
 		 b.change();
 		 System.out.println(b.state);
 
-		 D d = new D();
+		 D d = new D(5);
 		 d.change();
 		 System.out.println(d.state);
+
+		 E e = new E(2);
+		 e.change();
+		 System.out.println(e.state);
+
+		 C ch = new C();
+		 ch.setChanger(new D(10));
+		 ch.change();
+         ch.setChanger(new E(1));
+		 ch.change();
+
+
+
+
 	}
+
 
 
 }
